@@ -1,0 +1,8 @@
+<%- include('../partials/header', { pageTitle: 'Katalog' }) %>
+<h1>Katalog buku</h1>
+<ul>
+  <% daftarBuku.forEach(buku => { %>
+    <li><%= buku.judul %> (<%= buku.tahun %>) - <%= buku.kategori %></li>
+  <% }); %>
+</ul>
+<%- include('../partials/footer') %>
